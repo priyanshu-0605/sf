@@ -266,7 +266,8 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
         @media (max-width: 768px) {
           .hero {
             height: auto; /* Let content define height */
-            min-height: 50vh; /* Minimum height fallback */
+            min-height: 0; /* Remove unnecessary space */
+            background-color: transparent; /* No grey/white bars */
           }
           
           .hero-video {
